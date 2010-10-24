@@ -1,0 +1,7 @@
+This is a little Nautilus extension I wrote in python to extract a DMG to the current directory. Nothing fancy, it may not even work for you. This is really just for me.
+
+===Installing===
+
+One line: sudo make install-new
+
+If you're on Debian Lenny or older, it's (as root): make install-old
