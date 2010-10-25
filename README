@@ -1,5 +1,9 @@
 This is a little Nautilus extension I wrote in python to extract a DMG to the current directory. Nothing fancy, it may not even work for you. This is really just for me.
 
+===Depends===
+
+This isn't all-inclusive, but: pygtk, python (a stock install should be fine), nautilus, etc.
+
 ===Installing===
 
 One line: sudo make install-new
