@@ -24,5 +24,5 @@ install-new:
 
 uninstall-old:
 	rm -rf /usr/share/dmgextract
-	rm /usr/lib/nautilus/extensions-2.0/python/dmg.py
+	rm /usr/lib/nautilus/extensions-1.0/python/dmg.py
 	nautilus -q
