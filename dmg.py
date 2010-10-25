@@ -48,9 +48,9 @@ class dmgext(nautilus.MenuProvider):
 		return l
 
 	def extract(self, menu, file):
-		commands.getstatusoutput("/usr/local/dmg extract "+urllib.unquote(file.get_uri()[7:])+" "+urllib.unquote(file.get_uri()[7:])+".sc");
+		commands.getstatusoutput("dmg extract "+urllib.unquote(file.get_uri()[7:])+" "+urllib.unquote(file.get_uri()[7:])+".sc");
 		os.chdir(os.path.abspath(os.path.join(urllib.unquote(file.get_uri()[7:]), "..")))
-		commands.getstatusoutput("/usr/local/hfsplus "+urllib.unquote(file.get_uri()[7:])+".sc extractall")
+		commands.getstatusoutput("hfsplus "+urllib.unquote(file.get_uri()[7:])+".sc extractall")
 		os.remove(urllib.unquote(file.get_uri()[7:])+".sc")
 
 	def get_file_items(self, window, files):
